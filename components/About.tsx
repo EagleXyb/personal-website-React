@@ -32,7 +32,7 @@ export default function About() {
 
             <div className="mt-10 grid grid-cols-3 gap-6">
               {[
-                { label: '年经验', value: '5+' },
+                { label: '年经验', value: '10+' },
                 { label: '完成项目', value: '50+' },
                 { label: '客户满意度', value: '100%' },
               ].map((stat, index) => (

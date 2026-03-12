@@ -7,7 +7,7 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: '个人作品集 - 简约设计与卓越体验',
+  title: '用户至上 - 简约设计与卓越体验',
   description: '一人公司 | 专注简约设计与高质量开发',
 }
 
