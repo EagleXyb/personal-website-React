@@ -134,6 +134,52 @@ export default function InnovationTrainingPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
+            <div className="bg-white rounded-3xl p-8 shadow-lg mb-12">
+              <div className="text-center mb-8">
+                <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-4">
+                  初始能力测评
+                </span>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+                  了解您当前的创新能力水平
+                </h3>
+                <p className="text-slate-600 max-w-2xl mx-auto">
+                  通过快速测评，我们将为您推荐最适合的训练路径
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="bg-blue-50 rounded-2xl p-6 text-center">
+                  <div className="text-4xl mb-4">🧠</div>
+                  <h4 className="font-bold text-slate-900 mb-2">思维能力</h4>
+                  <p className="text-sm text-slate-600">评估您的逻辑思维、发散思维和批判性思维能力</p>
+                </div>
+                
+                <div className="bg-purple-50 rounded-2xl p-6 text-center">
+                  <div className="text-4xl mb-4">🎯</div>
+                  <h4 className="font-bold text-slate-900 mb-2">创新潜力</h4>
+                  <p className="text-sm text-slate-600">测试您的想象力、联想能力和跨界融合能力</p>
+                </div>
+                
+                <div className="bg-green-50 rounded-2xl p-6 text-center">
+                  <div className="text-4xl mb-4">🚀</div>
+                  <h4 className="font-bold text-slate-900 mb-2">实践能力</h4>
+                  <p className="text-sm text-slate-600">衡量您将创意转化为实际解决方案的能力</p>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                 <Link href="/innovation/assessment">
+                   <motion.button
+                     whileHover={{ scale: 1.05, y: -2 }}
+                     whileTap={{ scale: 0.95 }}
+                     className="px-10 py-5 bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full font-bold text-lg shadow-xl hover:shadow-2xl transition-all whitespace-nowrap"
+                   >
+                     开始测评 →
+                   </motion.button>
+                 </Link>
+               </div>
+            </div>
+
             <div className="text-center mb-12">
               <span className="inline-block px-4 py-1.5 bg-purple-100 text-purple-700 rounded-full text-sm font-semibold mb-4">
                 训练课程

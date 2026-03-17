@@ -48,14 +48,23 @@ export default function Footer() {
           >
             <h4 className="text-lg font-semibold mb-4">快速链接</h4>
             <ul className="space-y-3">
-              {['首页', '关于', '作品集', '联系'].map((link) => (
+              {['首页', '关于', '作品集', '联系', '管理员入口'].map((link) => (
                 <li key={link}>
-                  <a
-                    href={`#${link === '首页' ? '' : link.toLowerCase()}`}
-                    className="text-slate-400 hover:text-white transition-colors"
-                  >
-                    {link}
-                  </a>
+                  {link === '管理员入口' ? (
+                    <a
+                      href="/innovation/admin"
+                      className="text-slate-400 hover:text-white transition-colors"
+                    >
+                      {link}
+                    </a>
+                  ) : (
+                    <a
+                      href={`#${link === '首页' ? '' : link.toLowerCase()}`}
+                      className="text-slate-400 hover:text-white transition-colors"
+                    >
+                      {link}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
